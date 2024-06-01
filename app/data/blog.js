@@ -2,7 +2,7 @@ const blogs = [
   {
     id: 1,
     penulis: "Dimas Fiebry",
-    tanggal: "2022-05-14",
+    tanggal: "2024-05-14",
     image: "/assets/image/blog/blog1/blog1.jpg",
     judul:
       "Menyingkap Potensi AI: Teknologi yang Mengubah Kehidupan Sehari-hari",
@@ -27,7 +27,7 @@ const blogs = [
   <blockquote>
     "Perkembangan AI telah membuka peluang baru di berbagai industri, dari kesehatan hingga transportasi."
   </blockquote>
-              <img src="/assets/image/blog/blog1/img2.jpg"," alt="AI dalam Rumah Tangga" class=" object-cover w-full max-h-52 sm:max-h-72 sm:mb-6 bg-transparent rounded-md">
+              <img src="/assets/image/blog/blog1/aipengertian.jpg"," alt="AI dalam Rumah Tangga" class=" object-cover w-full max-h-52 sm:max-h-72 sm:mb-6 bg-transparent rounded-md">
 
 
         `,
@@ -40,7 +40,7 @@ const blogs = [
         judulsub: "Penggunaan AI dalam Rumah Tangga",
         materi: `
           <p>
-            <img src="/assets/image/blog/blog1/img2.jpg"," alt="AI dalam Rumah Tangga" class=" object-cover w-full max-h-52 sm:max-h-72 sm:mb-6 bg-transparent rounded-md">
+            <img src="/assets/image/blog/blog1/aihome.jpg"," alt="AI dalam Rumah Tangga" class=" object-cover w-full max-h-52 sm:max-h-72 sm:mb-6 bg-transparent rounded-md">
             AI telah membuat banyak peralatan rumah tangga menjadi lebih pintar dan efisien. <b>Contoh-contoh peralatan rumah tangga yang menggunakan AI:</b>
           </p>
           <ul>
@@ -102,7 +102,7 @@ const blogs = [
   {
     id: 2,
     penulis: "Dimas Fiebry",
-    tanggal: "2023-11-05",
+    tanggal: "2024-5-25",
     image: "/assets/image/blog/blog2/blog2.jpg",
     judul: "Inovasi Teknologi Blockchain: Mengubah Dunia Digital",
     deskripsi:
@@ -200,7 +200,7 @@ const blogs = [
   {
     id: 3,
     penulis: "Dimas Fiebry",
-    tanggal: "2024-05-12",
+    tanggal: "2024-05-28",
     image: "/assets/image/blog/blog3/blog4.jpg",
     judul: "Jurus Jitu Agar Tidak Tertidur di Kelas Pagi",
     deskripsi:

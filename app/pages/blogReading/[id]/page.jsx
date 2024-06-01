@@ -5,6 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { GoChevronLeft } from "react-icons/go";
 import ImageContainer from "@/app/components/blog/ImageContainer";
 import blogsData from "@/app/data/blog";
+import CopyRight from "@/app/components/footer/CopyRight";
 
 const BlogReading = () => {
   const { id } = useParams();
@@ -38,11 +39,11 @@ const BlogReading = () => {
   }
 
   return (
-    <div className="flex flex-col min-h-screen w-full pt-8 pb-10 lg:py-12 px-6 sm:px-12 md:px-16 lg:px-16 xl:px-28 bg-[#060911]">
+    <div className="flex flex-col min-h-screen w-full pt-8 lg:py-12 px-6 sm:px-12 md:px-16 lg:px-16 xl:px-28 bg-[#060911]">
       <button onClick={() => router.back()} className="mb-4">
         <GoChevronLeft size={25} color="white" />
       </button>
-      <div className="w-full flex flex-col gap-4">
+      <div className="w-full flex flex-col gap-4 pb-10">
         <h1 className="text-lg sm:text-xl xl:text-3xl text-opacity-90 font-bold tracking-wider text-[#329f9a]">
           {blog.judul}
         </h1>
@@ -69,6 +70,7 @@ const BlogReading = () => {
           ))}
         </div>
       </div>
+      <CopyRight>Written by Dimasfiebry 2024</CopyRight>
     </div>
   );
 };

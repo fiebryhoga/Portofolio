@@ -1,34 +1,30 @@
 const project = [
   {
-    id: 1,
-    nama: "My First Website - Abilify TV",
-    gambar: "/assets/image/project/project1.png",
-    deskripsi: "my first site using vanilla version html, css, js",
+    id: 2,
+    nama: "Nutrition Calculator",
+    gambar: "/assets/image/project/project2.png",
+    deskripsi:
+      "Nutrition Calculator Gen - 1 Using React, Data Stored in Json Format in Frontend, then will be developed in the second version",
     link: "https://www.canva.com/design/DAF8L73RLk8/GQ9wQtSScqyqRjJtnYWJhA/edit?utm_content=DAF8L73RLk8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     tools: [
       {
         id: 1,
-        namaTools: "Html",
+        namaTools: "ReactJS",
       },
       {
         id: 2,
-        namaTools: "Css",
+        namaTools: "Tailwind",
+      },
+      {
+        id: 3,
+        namaTools: "Web-App",
       },
       {
         id: 3,
         namaTools: "JavaScript",
       },
-      {
-        id: 4,
-        namaTools: "Disability",
-      },
-      {
-        id: 5,
-        namaTools: "Inclusive",
-      },
     ],
   },
-
   {
     id: 4,
     nama: "Bakso - Cak No",
@@ -89,28 +85,31 @@ const project = [
     ],
   },
   {
-    id: 2,
-    nama: "Nutrition Calculator",
-    gambar: "/assets/image/project/project2.png",
-    deskripsi:
-      "Nutrition Calculator Gen - 1 Using React, Data Stored in Json Format in Frontend, then will be developed in the second version",
+    id: 1,
+    nama: "My First Website - Abilify TV",
+    gambar: "/assets/image/project/project1.png",
+    deskripsi: "my first site using vanilla version html, css, js",
     link: "https://www.canva.com/design/DAF8L73RLk8/GQ9wQtSScqyqRjJtnYWJhA/edit?utm_content=DAF8L73RLk8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
     tools: [
       {
         id: 1,
-        namaTools: "ReactJS",
+        namaTools: "Html",
       },
       {
         id: 2,
-        namaTools: "Tailwind",
-      },
-      {
-        id: 3,
-        namaTools: "Web-App",
+        namaTools: "Css",
       },
       {
         id: 3,
         namaTools: "JavaScript",
+      },
+      {
+        id: 4,
+        namaTools: "Disability",
+      },
+      {
+        id: 5,
+        namaTools: "Inclusive",
       },
     ],
   },

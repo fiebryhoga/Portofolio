@@ -23,7 +23,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="bg-[#080F17]">
-        <CopyRight />
+        <CopyRight>Design by Dimasfiebry 2024</CopyRight>
       </div>
     </div>
   );
