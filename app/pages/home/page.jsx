@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import styled from "styled-components";
+import Link from "next/link";
 
 const BackgroundDiv = styled.div`
   height: 100vh;
@@ -25,7 +26,7 @@ const BackgroundDiv = styled.div`
     background-position: right calc(100% - 60px);
   }
   @media (min-width: 1024px) {
-    height: 120vh;
+    height: 140vh;
     background-size: 900px;
     background-position: right calc(100% - 80px);
   }
@@ -86,14 +87,15 @@ const Home = () => {
             coding while sipping coffee and enjoying the sunset. I will help you
             to make web or mobile application, I have good team work.
           </p>
-          <button
-            className="z-40 mt-0 py-2 text-sm rounded-full bg-[#329f9a] w-32 hover:bg-[#e9eded] hover:text-[#329f9a] transition-all ease-in-out duration-500"
+          <Link
+          href="https://wa.me/6285730979537"
+            className="z-40 mt-0 flex justify-center items-center py-2 text-sm rounded-full bg-[#329f9a] w-32 hover:bg-[#e9eded] hover:text-[#329f9a] transition-all ease-in-out duration-500"
             data-aos="fade-up"
             data-aos-duration="3000"
             data-aos-delay="300"
           >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
 

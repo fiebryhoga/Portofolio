@@ -1,11 +1,11 @@
 "use client";
-
 import React, { useState, useEffect } from "react";
 import Header from "@/app/components/layout/Header";
 import { GoChevronLeft } from "react-icons/go";
 import Link from "next/link";
 import ProjectList from "@/app/components/project/ProjectList";
 import project from "@/app/data/project";
+
 const Page = () => {
   const [search, setSearch] = useState("");
   const [filteredProjects, setFilteredProjects] = useState(project);

@@ -2,6 +2,7 @@
 
 "use client";
 import react from "react";
+import Link from "next/link";
 import Header from "@/app/components/layout/Header";
 
 const About = () => {
@@ -85,7 +86,8 @@ const About = () => {
       </div>
       <div className="flex flex-col lg:flex-row relative lg:py-4 justify-center items-center gap-2">
         <div className="flex flex-row relative transition-all duration-300 pl-4 md:pl-4">
-          <button
+          <Link
+            href="https://www.linkedin.com/in/dimas-fiebry-prayhoga-putra-25a8652b7/"
             className="group w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -105,8 +107,9 @@ const About = () => {
             <span className="text-xs lg:text-normal origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               Dimasfiebry
             </span>
-          </button>
-          <button
+          </Link>
+          <Link
+            href="https://dribbble.com/Dimasfiebry"
             className="group w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="1000"
@@ -127,10 +130,11 @@ const About = () => {
             <span className="text-xs lg:text-normal origin origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               Dimasfiebry
             </span>
-          </button>
+          </Link>
         </div>
         <div className="flex flex-row relative transition-all duration-300">
-          <button
+          <Link
+            href="https://github.com/fiebryhoga"
             className="group w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -153,8 +157,9 @@ const About = () => {
             <span className="text-xs lg:text-normal origin origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               Fiebryhoga
             </span>
-          </button>
-          <button
+          </Link>
+          <Link
+            href="https://www.instagram.com/fiebryhoga"
             className="group w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="2000"
@@ -175,10 +180,11 @@ const About = () => {
             <span className="text-xs lg:text-normal origin origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               Fiebryhoga
             </span>
-          </button>
+          </Link>
         </div>
         <div className="flex flex-row relative transition-all duration-300">
-          <button
+          <Link
+            href="https://x.com/Fiebryhoga"
             className="group w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -198,8 +204,9 @@ const About = () => {
             <span className="text-xs lg:text-normal origin origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               Fiebryhoga
             </span>
-          </button>
-          <button
+          </Link>
+          <Link
+            href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=dimasfiebry@gmail.com"
             className="group ml-2 w-12 hover:w-44 h-12 relative text-neutral-50 duration-300 before:duration-300 before:hover:500 font-medium tracking-wider flex justify-start gap-2 items-center p-2 pr-6 before:absolute before:-z-10 before:left-8 before:hover:left-40 before:w-6 before:h-6  before:rotate-45"
             data-aos="fade-up"
             data-aos-duration="3000"
@@ -220,7 +227,7 @@ const About = () => {
             <span className="text-xs lg:text-normal origin origin-left inline-flex duration-100 group-hover:duration-300 group-hover:delay-200 opacity-0 group-hover:opacity-100 border-l-2 px-1 transform scale-x-0 group-hover:scale-x-100 transition-all">
               dimasfiebry@gmail.com
             </span>
-          </button>
+          </Link>
         </div>
       </div>
     </section>
