@@ -1,0 +1,92 @@
+export const tools = [
+  {
+    id: 10,
+    nama: "HTML",
+    image: "/assets/image/tools/icons8-html.svg",
+    link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+  },
+  {
+    id: 11,
+    nama: "CSS",
+    image: "/assets/image/tools/icons8-css.svg",
+    link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+  },
+  {
+    id: 7,
+    nama: "JavaScript",
+    image: "/assets/image/tools/icons8-javascript.svg",
+    link: "https://www.javascript.com/",
+  },
+  {
+    id: 1,
+    nama: "TypeScript",
+    image: "/assets/image/tools/icons8-typescript.svg",
+    link: "https://www.typescriptlang.org/",
+  },
+  {
+    id: 8,
+    nama: "Sass",
+    image: "/assets/image/tools/icons8-sass.svg",
+    link: "https://sass-lang.com/",
+  },
+  {
+    id: 2,
+    nama: "Tailwind",
+    image: "/assets/image/tools/icons8-tailwind-css.svg",
+    link: "https://tailwindcss.com/",
+  },
+  {
+    id: 12,
+    nama: "Bootstrap",
+    image: "/assets/image/tools/icons8-bootstrap.svg",
+    link: "https://getbootstrap.com/",
+  },
+  {
+    id: 3,
+    nama: "React",
+    image: "/assets/image/tools/icons8-react.svg",
+    link: "https://reactjs.org/",
+  },
+  {
+    id: 14,
+    nama: "Next JS",
+    image: "/assets/image/tools/icons8-next.js.svg",
+    link: "https://nextjs.org",
+  },
+  {
+    id: 13,
+    nama: "Java",
+    image: "/assets/image/tools/java.svg",
+    link: "https://www.java.com/en/",
+  },
+  {
+    id: 4,
+    nama: "PHP",
+    image: "/assets/image/tools/icons8-php.svg",
+    link: "https://www.php.net/",
+  },
+  {
+    id: 6,
+    nama: "Laravel",
+    image: "/assets/image/tools/laravel.svg",
+    link: "https://laravel.com/",
+  },
+  {
+    id: 5,
+    nama: "MySQL",
+    image: "/assets/image/tools/icons8-mysql.svg",
+    link: "https://www.mysql.com/",
+  },
+  {
+    id: 9,
+    nama: "Figma",
+    image: "/assets/image/tools/icons8-figma.svg",
+    link: "https://www.figma.com/",
+  },
+  {
+    id: 15,
+    nama: "Git",
+    image: "/assets/image/tools/icons8-git.svg",
+    link: "https://git-scm.com",
+  },
+];
