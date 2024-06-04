@@ -9,6 +9,8 @@ import Link from "next/link";
 
 const BackgroundDiv = styled.div`
   height: 96vh;
+  min-height: 96vh;
+  max-height: 96vh;
   width: 100%;
   display: flex;
   flex-direction: column;
