@@ -8,7 +8,7 @@ import styled from "styled-components";
 import Link from "next/link";
 
 const BackgroundDiv = styled.div`
-  height: 90vh;
+  height: 96vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21,12 +21,12 @@ const BackgroundDiv = styled.div`
   position: relative;
 
   @media (min-width: 768px) {
-    height: 100vh;
+    height: 95vh;
     background-size: 700px;
     background-position: right calc(100% - 60px);
   }
   @media (min-width: 1024px) {
-    height: 140vh;
+    height: 120vh;
     background-size: 900px;
     background-position: right calc(100% - 80px);
   }
