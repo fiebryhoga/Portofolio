@@ -1,97 +1,129 @@
-/* eslint-disable jsx-a11y/alt-text */
-/* eslint-disable @next/next/no-img-element */
-import React, { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { IoIosHome } from "react-icons/io";
+import { MdArticle } from "react-icons/md";
+import { FaFolderOpen } from "react-icons/fa";
+import { FaTools } from "react-icons/fa";
+import { BiSolidUserPin } from "react-icons/bi";
 import Link from "next/link";
-import Header from "./Header";
-import { FaBars } from "react-icons/fa";
-import { AiOutlineClose } from "react-icons/ai";
+
+const Tooltip = ({ text, visible }) => {
+  return (
+    <div
+      className={`absolute mt-2 w-max py-1 px-2 bg-black text-[#329f9a] text-sm rounded-lg transition-opacity duration-300 ${
+        visible ? "opacity-100" : "opacity-0"
+      }`}
+      style={{ bottom: "-30px", left: "-10px" }}
+    >
+      {text}
+    </div>
+  );
+};
 
 const Navbar = () => {
-  const [nav, setNav] = useState(false);
+  const [prevScrollPos, setPrevScrollPos] = useState(0);
+  const [visible, setVisible] = useState(true);
+  const [tooltipVisible, setTooltipVisible] = useState(null);
+  const navbarRef = useRef(null);
 
-  const handleScroll = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const navbarTopPos = navbarRef.current ? navbarRef.current.offsetTop : 0;
+      const threshold = 200;
+
+      setVisible(
+        prevScrollPos > currentScrollPos ||
+          currentScrollPos < navbarTopPos + threshold
+      );
+      setPrevScrollPos(currentScrollPos);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollPos]);
+
+  const handleMouseEnter = (index) => {
+    setTooltipVisible(index);
   };
 
-  const navList = [
-    { nav: "Beranda", id: "home" },
-    { nav: "About", id: "about" },
-    { nav: "Blog", id: "blog" },
-    { nav: "Project", id: "project" },
-    { nav: "Contact", id: "contact" },
-  ];
+  const handleMouseLeave = () => {
+    setTooltipVisible(null);
+  };
 
   return (
-    <div className="w-full justify-between pr-6 sm:pr-12 md:pr-0 md:justify-normal z-50 fixed flex flex-row md:gap-16 lg:gap-24 bg-transparent py-5 border-b border-b-gray-200 border-opacity-15 items-center backdrop-blur-lg">
-      <Link href="/" passHref>
-        <Header>dimasfiebry</Header>
-      </Link>
-      <button className="md:hidden" onClick={() => setNav(!nav)}>
-        <FaBars style={{ color: "#329f9a" }} />
-      </button>
-      <nav className="hidden md:flex w-full flex-row items-center gap-40">
-        <ul className=" lg:px-44 lg:pl-72 md:px-16 flex flex-row justify-between w-full tracking-wide text-sm text-[#c3e7e5]">
-          {navList.map((item) => (
-            <li key={item.nav} className=" hover:text-[#329f9a] font-medium">
-              <a
-                href={`#${item.id}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleScroll(item.id);
-                }}
-              >
-                {item.nav}
+    <div className="w-full px-6 sm:px-12 md:px-[200px] lg:px-[340px] xl:px-[500px] flex py-3 md:py-4 justify-center fixed z-50 transition-opacity duration-500">
+      <nav
+        ref={navbarRef}
+        className={`navbar w-full py-3 flex rounded-lg bg-black bg-opacity-40 backdrop-blur-lg border border-white border-opacity-60 px-6 transition-all duration-300 ${
+          visible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <ul className="w-full flex flex-row justify-between px-6 sm:px-10 lg:px-8 xl:px-4 items-center relative">
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(0)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="#home" legacyBehavior>
+              <a>
+                <IoIosHome size={25} color="#329f9a" />
+                <Tooltip text="Home" visible={tooltipVisible === 0} />
               </a>
-            </li>
-          ))}
+            </Link>
+          </li>
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(1)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="#about" legacyBehavior>
+              <a>
+                <BiSolidUserPin size={25} color="#329f9a" />
+                <Tooltip text="About" visible={tooltipVisible === 1} />
+              </a>
+            </Link>
+          </li>
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(2)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="#blog" legacyBehavior>
+              <a>
+                <MdArticle size={25} color="#329f9a" />
+                <Tooltip text="Blog" visible={tooltipVisible === 2} />
+              </a>
+            </Link>
+          </li>
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(3)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="#project" legacyBehavior>
+              <a>
+                <FaFolderOpen size={25} color="#329f9a" />
+                <Tooltip text="Projects" visible={tooltipVisible === 3} />
+              </a>
+            </Link>
+          </li>
+          <li
+            className="relative"
+            onMouseEnter={() => handleMouseEnter(4)}
+            onMouseLeave={handleMouseLeave}
+          >
+            <Link href="#tools" legacyBehavior>
+              <a>
+                <FaTools size={25} color="#329f9a" />
+                <Tooltip text="Tools" visible={tooltipVisible === 4} />
+              </a>
+            </Link>
+          </li>
         </ul>
       </nav>
-      {/* mobile */}
-      {nav ? (
-        <div className="opacity-25 fixed w-full h-screen z-10 top-0 right-0"></div>
-      ) : null}
-      <div
-        className={
-          nav
-            ? "fixed top-0 w-[80%] right-0 h-screen bg-[#329f9a] z-10 transition-transform ease-in-out duration-700 opacity-95"
-            : "fixed top-0 w-[80%] left-[100%] h-screen bg-[#329f9a] z-10 transition-transform ease-in-out duration-700 opacity-10"
-        }
-      >
-        <nav className="w-full gap-8">
-          <ul className="flex flex-col mt-5 w-full">
-            <li className="w-full flex justify-end px-16 py-1 pb-4">
-              <AiOutlineClose
-                onClick={() => setNav(false)}
-                size={23}
-                className="md:hidden font-extrabold cursor-pointer"
-              />
-            </li>
-            {navList.map((item) => (
-              <li
-                key={item.nav}
-                onClick={() => {
-                  handleScroll(item.id);
-                  setNav(false);
-                }}
-              >
-                <a
-                  href={`#${item.id}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleScroll(item.id);
-                  }}
-                  className="py-2 px-8 hover:bg-gray-200"
-                >
-                  {item.nav}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
     </div>
   );
 };
