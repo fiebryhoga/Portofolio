@@ -19,16 +19,20 @@ const BackgroundDiv = styled.div`
   background-position: center calc(100% - 25px);
   background-size: 100%;
   background-image: url("/assets/image/home/Background.png");
-  background-opacity: 80%;
+  background-opacity: 100%;
   position: relative;
 
   @media (min-width: 768px) {
-    height: 95vh;
+    height: 100vh;
+    min-height: 100vh;
+    max-height: 100vh;
     background-size: 700px;
     background-position: right calc(100% - 60px);
   }
   @media (min-width: 1024px) {
     height: 120vh;
+    min-height: 120vh;
+    max-height: 120vh;
     background-size: 900px;
     background-position: right calc(100% - 80px);
   }
