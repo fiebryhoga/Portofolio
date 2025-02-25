@@ -52,7 +52,7 @@ const About = () => {
           </p>
 
           <a
-            href="https://ngl.link/NGL"
+            href="https://t.me/share/url?url=https://t.me/+6288991252603&text=To%20Dimas%20Fiebry%20Prayhoga%20Putra%2C%20..."
             className="flex justify-end"
             data-aos="fade-left"
             ata-aos-offset="0"

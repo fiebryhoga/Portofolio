@@ -39,9 +39,9 @@ const BackgroundDiv = styled.div`
 `;
 
 const Home = () => {
-  useEffect(() => {
-    AOS.init();
-  }, []);
+  // useEffect(() => {
+  //   AOS.init();
+  // }, []);
 
   return (
     <BackgroundDiv className="">
@@ -61,33 +61,33 @@ const Home = () => {
         <div className="px-6 sm:pl-12 sm:pr-72 md:px-12 md:pr-44 lg:px-28 w-full flex flex-col justify-center gap-2 lg:gap-4">
           <h3
             className="py-4 text-sm sm:text-base font-semibold tracking-wider text-[#329f9a] lg:text-lg"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
+            // data-aos-delay="300"
           >
-            Hello There! I'm
+            Hello There! I'mmmm
           </h3>
           <h1
             className="text-lg sm:text-xl font-semibold tracking-wider text-[#c3e7e5] lg:text-4xl"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
+            // data-aos="fade-up"
+            // data-aos-duration="1000"
+            // data-aos-delay="500"
           >
-            Dimas Fiebry Prayhoga Putra
+            Dimas Fiebry Prayhoga Putraaaaa
           </h1>
           <h3
             className="text-xs sm:text-sm font-medium tracking-wide text-[#c3e7e5] lg:text-lg"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="300"
+            // data-aos="fade-up"
+            // data-aos-duration="2000"
+            // data-aos-delay="300"
           >
             Brawijaya University Student
           </h3>
           <p
             className="text-xs font-normal tracking-wide py-6 opacity-60 leading-5 text-justify md:pr-32 text-[#c3e7e5] lg:w-[800px] lg:text-base"
-            data-aos="fade-up"
-            data-aos-duration="2000"
-            data-aos-delay="500"
+            // data-aos="fade-up"
+            // data-aos-duration="2000"
+            // data-aos-delay="500"
           >
             I am interested in a career as a frontend developer. I dream of
             coding while sipping coffee and enjoying the sunset. I will help you
@@ -96,9 +96,9 @@ const Home = () => {
           <Link
           href="https://wa.me/6285730979537"
             className="z-40 mt-0 flex justify-center items-center py-2 text-sm rounded-full bg-[#329f9a] w-32 hover:bg-[#e9eded] hover:text-[#329f9a] transition-all ease-in-out duration-500"
-            data-aos="fade-up"
-            data-aos-duration="3000"
-            data-aos-delay="300"
+            // data-aos="fade-up"
+            // data-aos-duration="3000"
+            // data-aos-delay="300"
           >
             Contact Me
           </Link>
