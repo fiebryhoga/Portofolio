@@ -73,7 +73,7 @@ const Home = () => {
             // data-aos-duration="1000"
             // data-aos-delay="500"
           >
-            Dimas Fiebry Prayhoga Putraaaaa
+            Dimas Fiebry Prayhoga Putra
           </h1>
           <h3
             className="text-xs sm:text-sm font-medium tracking-wide text-[#c3e7e5] lg:text-lg"
